@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ConfigServerAston
+
+server:
+  port: 8888
+
+config:
+  repository: config-repo

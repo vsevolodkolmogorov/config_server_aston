@@ -21,12 +21,11 @@ spring:
       mail.from: test@gmail.com
 server:
   port: 8082
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+
+discovery:
+  server:
+    url: http://localhost:8761
+
 resilience4j.circuitbreaker:
   instances:
     mailCB:
